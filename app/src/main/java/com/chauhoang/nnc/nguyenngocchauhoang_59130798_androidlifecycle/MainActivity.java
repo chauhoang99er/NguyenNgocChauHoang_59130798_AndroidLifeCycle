@@ -2,16 +2,28 @@ package com.chauhoang.nnc.nguyenngocchauhoang_59130798_androidlifecycle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.icu.text.SimpleDateFormat;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import java.util.Date;
 
 public class MainActivity extends AppCompatActivity {
+
+    TextView makeTest;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Log.d("LifeCycle","onCreate Called");
+        //Chuoi~ gio` phut giay
+        makeTest = findViewById(R.id.makeTest);
+        SimpleDateFormat spF = new SimpleDateFormat("HH:mm:ss");
+        String date = spF.format(new Date());
+        makeTest.setText(date);
     }
 
     @Override
