@@ -16,4 +16,5 @@ Mở lại ứng dụng: onRestart -> onStart -> onResume
 Nếu cần lưu thông tin của ứng dụng để khôi phục lại trạng thái hiển thị của ứng dụng
 khi chạy lại ứng dụng thì cần phải thực hiện trong phương thức vòng đời nào? vì sao?
 
-Cần phải thực hiện trong phương thức:
+Cần phải thực hiện trong phương thức: Chúng ta có thể thực hiện ở phương thức vòng đời onStart hoặc onResume.
+Vì khi chúng ta chạy lại ứng dụng thì 2 phương thức này sẽ được gọi và thực thi khôi phục lại trạng thái
